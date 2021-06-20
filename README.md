@@ -8,8 +8,7 @@
 -  [Features](#features)
 -  [Installation](#installation)
 -  [Test](#test)
--  [Api-endpoints](#api-endpoints)
--  [Service-Description](#)
+-  [Service-Description](#service-description)
 
 ## Technologies
 
@@ -89,5 +88,6 @@ Some Major Dirs:
 -  Migration: Contains Database migration rules for the service
 
 Design Pattern and Reason:
-- Clean Architecture: By default nextjs make use of this Pattern
-Reason: It help you write mentainable and Readable code
+
+-  Clean Architecture: By default nextjs make use of this Pattern
+   Reason: It help you write mentainable and Readable code
