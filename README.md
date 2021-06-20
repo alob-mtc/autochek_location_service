@@ -38,7 +38,7 @@
 -  create a databse with name "autochek"
 
 ```bash
-$ git clone
+$ git clone https://github.com/alob-mtc/autochek_location_service.git
 
 $ Run `yarn install` or `npm install` to install packages
 
