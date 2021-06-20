@@ -1,0 +1,17 @@
+default:
+   type: postgres
+   host: localhost
+   port: 5432
+   username: postgres
+   password: postgres
+   database: autochek
+   synchronize: false
+   entities:
+      - 'dist/**/*.entity{.ts,.js}'
+   migrationsTableName: TypeormMigrations
+   migrations:
+      - 'dist/Migrations/*{.ts,.js}'
+   cli:
+      migrationsDir: src/Migrations
+   autoLoadEntities: true
+   ssl: false
