@@ -74,6 +74,14 @@ $ Navigate to http://localhost:8082/api-docs in your browser to test APIs endpoi
 
 ## Service-Description
 
+Solution:
+
+- Location is an entity that Represent locations to be supplied
+- There is a center_location field on the location entity that indicate if the Specific location is the Center location which is the refrence from which the distance is to be Calculated
+- I created a business rule that only allows one Center_Location to exist at any given time
+- if the center location is to be changed a new Location with the center_location field set to "true" will automically revoke the previous center location and set the new one as the center location
+- The "calutate-distance" api accepts a location ID fetchs the location and calculate the distance of that location from the Center Location in the Database.
+
 ##### Dir structure
 
 Some Major Dirs:
@@ -91,3 +99,7 @@ Design Pattern and Reason:
 
 -  Clean Architecture: By default nextjs make use of this Pattern
    Reason: It help you write mentainable and Readable code
+
+
+Additions:
+- I would Really like to add test has i am a big fan of TDD, but the test came in 6pm on Saturday which made it not Feasible on my end to write test.
